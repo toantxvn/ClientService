@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bind_outside_aidl_service_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind to outside AIDL Service Activity" />
+
+    <Button
+        android:id="@+id/bind_outside_messenger_service_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind to outside Messenger Service Activity" />
+
+    <Button
+        android:id="@+id/internal_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Communicate with Internal service" />
+
+    <Button
+        android:id="@+id/connect_to_txtmanager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to TXT Manager" />
+
+</LinearLayout>

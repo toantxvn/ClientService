@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toantx.clientservice">
+
+    <queries>
+        <package android:name="com.toantx.serverservice" />
+    </queries>
+    <queries>
+        <package android:name="com.toantx.txtmanager" />
+    </queries>
+
+    <application
+        android:name=".ClientServiceApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClientService">
+        <activity
+            android:name=".test_imsmanager.TestImsManagerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".communicate_txt_manager.TXTManagerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".internal_service.InternalServiceActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <service
+            android:name=".internal_service.InternalService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".outside_messenger_service.OutSideMessengerServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".outside_aidl_service.OutsideServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

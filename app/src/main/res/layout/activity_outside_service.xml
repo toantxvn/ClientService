@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".outside_aidl_service.OutsideServiceActivity">
+
+    <Button
+        android:id="@+id/btn_generate_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate ID" />
+
+    <Button
+        android:id="@+id/btn_fast_double_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fast Double point" />
+
+    <Button
+        android:id="@+id/btn_low_triple_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Low Triple point" />
+
+    <TextView
+        android:id="@+id/tv_result_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+</androidx.appcompat.widget.LinearLayoutCompat>
